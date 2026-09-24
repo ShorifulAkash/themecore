@@ -346,6 +346,18 @@ function initForms() {
 }
 
 /* --------------------------------------------------------------------------
+   8b. Footer
+   -------------------------------------------------------------------------- */
+function initFooter() {
+  const backToTop = $('#footer-back-to-top');
+  if (backToTop) {
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+}
+
+/* --------------------------------------------------------------------------
    9. Init All
    -------------------------------------------------------------------------- */
 document.addEventListener('DOMContentLoaded', () => {
@@ -357,4 +369,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initFAQ();
   initModals();
   initForms();
+  initFooter();
 });
