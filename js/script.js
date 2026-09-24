@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    ThemeCore.net — Premium Domain For Sale | script.js
    ========================================================================== */
 
@@ -39,9 +39,9 @@ function initPrices() {
    2. Header scroll effect
    -------------------------------------------------------------------------- */
 function initHeader() {
-  const header = $('.site-header');
-  if (!header) return;
-  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
+  const headerWrapper = $('.site-header-wrapper') || $('.site-header');
+  if (!headerWrapper) return;
+  const onScroll = () => headerWrapper.classList.toggle('scrolled', window.scrollY > 20);
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 }
@@ -99,7 +99,8 @@ function initSmoothScroll() {
       const target = $(id);
       if (!target) return;
       e.preventDefault();
-      const headerH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 72;
+      const style = getComputedStyle(document.documentElement);
+      const headerH = parseInt(style.getPropertyValue('--header-h')) || 72;
       const top = target.getBoundingClientRect().top + window.scrollY - headerH - 16;
       window.scrollTo({ top, behavior: 'smooth' });
     });
@@ -252,7 +253,8 @@ function initModals() {
       // Scroll to purchase section
       const target = $('#purchase');
       if (target) {
-        const headerH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 72;
+        const s = getComputedStyle(document.documentElement);
+        const headerH = parseInt(s.getPropertyValue('--header-h')) || 72;
         const top = target.getBoundingClientRect().top + window.scrollY - headerH - 16;
         window.scrollTo({ top, behavior: 'smooth' });
       }
