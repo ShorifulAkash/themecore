@@ -1,106 +1,418 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="0U32wksGsaf3GpuDnttMi6xE2vsiklY0rVRfcqTAhpE">
-    <!-- google-site-verification=0U32wksGsaf3GpuDnttMi6xE2vsiklY0rVRfcqTAhpE -->
-    <title>themecore.net - For sale</title>
-
-    <!-- google font Raleway -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-        body {
-            font-family: "Raleway", sans-serif;
-            color: #001732;
-            background: #f2f2f2;
-            break-word: break-all;
-        }
-        /* title */
-        .for-sale {
-            font-size: 100px; font-weight: 600;
-        }
-        /* theme name */
-        .theme-name {
-            font-size: 160px; font-weight: 700; margin: 20px 0 32px;
-        }
-        /* btn */
-        .btn {
-            display: inline-block; font-size: 24px; color: #FFFFFF; font-weight: 500; background: #001732; padding: 14px 60px; border-radius: 4px; text-decoration: none;
-        }
-        .btn-text {
-            display: inline-block; font-size: 20px; color: #001732; font-weight: 700; text-decoration: none;
-        }
-        .btn-text,
-        .btn:hover {
-            opacity: 85%;
-        }
-        /* max width 1280px */
-        @media only screen and (max-width: 1280px) {
-            /* title */
-            .for-sale {
-                font-size: 70px;
-            }
-            /* theme name */
-            .theme-name {
-                font-size: 120px;
-            }
-        }
-        /* max width 1024px */
-        @media only screen and (max-width: 1024px) {
-            /* title */
-            .for-sale {
-                font-size: 40px;
-            }
-            /* theme name */
-            .theme-name {
-                font-size: 80px;
-            }
-        }
-        /* max width 640px */
-        @media only screen and (max-width: 640px) {
-            /* title */
-            .for-sale {
-                font-size: 30px;
-            }
-            /* theme name */
-            .theme-name {
-                font-size: 40px;
-            }
-            /* btn */
-            .btn {
-                padding: 10px 30px;
-            }
-        }
-    </style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThemeCore.net &mdash; Premium Domain For Sale</title>
+  <meta name="description" content="ThemeCore.net is a premium, memorable, and brandable domain available for purchase. Short, professional, and versatile for modern digital brands." />
+  <meta property="og:title" content="ThemeCore.net &mdash; Premium Domain For Sale" />
+  <meta property="og:description" content="ThemeCore.net is a premium, memorable, and brandable domain available for purchase." />
+  <meta property="og:url" content="https://themecore.net" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232563EB'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-size='18' font-family='system-ui' font-weight='800' fill='white'>T</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <div style="height: 100vh; display: flex; align-items: center; justify-content: center; padding: 50px 20px;">
-        <div style="text-align: center;">
-            <!-- title -->
-            <h2 class="for-sale">
-                For sale
-            </h2>
-            <!-- theme name -->
-            <h1 class="theme-name">
-                themecore.net
-            </h1>
-            <!-- button -->
-            <p style="font-size: 20px; color: #001732; font-weight: 500;">
-                To make an offer: 
-                <a href="mailto:contacts.shoriful@gmail.com" class="btn-text">
-                    contacts.shoriful@gmail.com
-                </a>
-            </p>
+<header class="site-header" role="banner">
+  <div class="container">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#" class="nav-logo" aria-label="ThemeCore.net home">ThemeCore<span>.net</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="#why">Why ThemeCore</a></li>
+        <li><a href="#usecases">Use Cases</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn btn-primary" data-modal="offer" aria-label="Buy ThemeCore.net">Buy Now</button>
+        <button class="nav-hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="nav-mobile" id="mobile-menu" aria-hidden="true">
+  <ul class="nav-mobile-links" role="list">
+    <li><a href="#why">Why ThemeCore</a></li>
+    <li><a href="#usecases">Use Cases</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact-section">Contact</a></li>
+  </ul>
+  <button class="btn btn-primary btn-full" data-modal="offer">Buy Now &mdash; <span data-price></span></button>
+</div>
+<main id="main-content">
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-bg">
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge"><span class="badge-dot" aria-hidden="true"></span>Premium Domain For Sale</span>
+      </div>
+      <h1 class="hero-title reveal reveal-delay-1" id="hero-title">ThemeCore<span class="hero-title-dot">.net</span></h1>
+      <p class="hero-headline reveal reveal-delay-2">A memorable, brandable domain for your next digital product.</p>
+      <p class="hero-desc reveal reveal-delay-3">ThemeCore.net is a short, versatile, and brandable domain name suited for modern web, design, SaaS, and digital businesses.</p>
+      <div class="hero-cta reveal reveal-delay-4">
+        <button class="btn btn-primary btn-lg" data-action="buy" id="hero-buy-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Buy Now &mdash; <span data-price></span>
+        </button>
+        <button class="btn btn-outline btn-lg" data-modal="offer" id="hero-offer-btn">Make an Offer</button>
+        <button class="btn btn-ghost btn-lg" data-modal="contact" id="hero-contact-btn">Contact Seller</button>
+      </div>
+      <div class="hero-trust reveal reveal-delay-5">
+        <div class="hero-trust-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Secure domain transfer
         </div>
+        <div class="hero-trust-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Fast response
+        </div>
+        <div class="hero-trust-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Professional transaction
+        </div>
+      </div>
     </div>
+  </div>
+</section>
+<section class="section section-alt" id="why" aria-labelledby="why-title">
+  <div class="container">
+    <header class="section-header">
+      <span class="text-label reveal">Domain Value</span>
+      <h2 class="text-section-title reveal reveal-delay-1" id="why-title">Why ThemeCore.net?</h2>
+      <p class="text-section-subtitle reveal reveal-delay-2">A domain that stands out — memorable, professional, and built for modern digital brands.</p>
+    </header>
+    <div class="cards-grid">
+      <article class="feature-card reveal">
+        <div class="feature-card-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <h3>Memorable Brand</h3>
+        <p>Simple, clean, and easy to remember. ThemeCore rolls off the tongue and sticks in the mind.</p>
+      </article>
+      <article class="feature-card reveal reveal-delay-1">
+        <div class="feature-card-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <h3>Short &amp; Professional</h3>
+        <p>A concise name that works well as a modern digital brand — clean in email, logos, and URLs.</p>
+      </article>
+      <article class="feature-card reveal reveal-delay-2">
+        <div class="feature-card-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <h3>Highly Versatile</h3>
+        <p>Suitable for themes, templates, UI products, SaaS, design tools, and developer platforms.</p>
+      </article>
+      <article class="feature-card reveal reveal-delay-3">
+        <div class="feature-card-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+        <h3>Easy to Brand</h3>
+        <p>ThemeCore can be developed into a strong standalone technology brand with lasting identity.</p>
+      </article>
+      <article class="feature-card reveal reveal-delay-4">
+        <div class="feature-card-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+        <h3>Developer Friendly</h3>
+        <p>A natural fit for web developers, agencies, SaaS companies, and digital product businesses.</p>
+      </article>
+      <article class="feature-card reveal reveal-delay-5">
+        <div class="feature-card-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+        <h3>Global Potential</h3>
+        <p>An English-language brand name that works across international markets and audiences.</p>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="section" id="usecases" aria-labelledby="usecases-title">
+  <div class="container">
+    <header class="section-header">
+      <span class="text-label reveal">Possible Applications</span>
+      <h2 class="text-section-title reveal reveal-delay-1" id="usecases-title">What Could You Build With ThemeCore?</h2>
+      <p class="text-section-subtitle reveal reveal-delay-2">These are example possibilities only. What you build is entirely up to you.</p>
+    </header>
+    <div class="usecases-grid">
+      <article class="usecase-card reveal">
+        <div class="usecase-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+        <h3>WordPress Theme Marketplace</h3>
+      </article>
+      <article class="usecase-card reveal reveal-delay-1">
+        <div class="usecase-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"/><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"/><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"/></svg></div>
+        <h3>UI / Design System Platform</h3>
+      </article>
+      <article class="usecase-card reveal reveal-delay-2">
+        <div class="usecase-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></div>
+        <h3>SaaS Product</h3>
+      </article>
+      <article class="usecase-card reveal reveal-delay-3">
+        <div class="usecase-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+        <h3>Website Builder</h3>
+      </article>
+      <article class="usecase-card reveal reveal-delay-4">
+        <div class="usecase-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3>Developer Tools</h3>
+      </article>
+      <article class="usecase-card reveal reveal-delay-5">
+        <div class="usecase-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <h3>Web Design Agency</h3>
+      </article>
+      <article class="usecase-card reveal">
+        <div class="usecase-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+        <h3>AI Design Platform</h3>
+      </article>
+      <article class="usecase-card reveal reveal-delay-1">
+        <div class="usecase-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div>
+        <h3>Template Marketplace</h3>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="brand-section" aria-labelledby="brand-title">
+  <div class="container">
+    <header class="section-header">
+      <span class="text-label reveal">Brand Potential</span>
+      <h2 class="text-section-title reveal reveal-delay-1" id="brand-title">Build a Brand Around ThemeCore</h2>
+      <p class="text-section-subtitle reveal reveal-delay-2">One name. Endless directions. The ThemeCore identity can grow with your vision.</p>
+    </header>
+    <div class="brand-showcase">
+      <div class="brand-main-name reveal">ThemeCore</div>
+      <div class="brand-divider reveal" aria-hidden="true"></div>
+      <div class="brand-extensions reveal reveal-delay-1">
+        <span class="brand-ext-pill">ThemeCore Studio</span>
+        <span class="brand-ext-pill">ThemeCore Labs</span>
+        <span class="brand-ext-pill">ThemeCore AI</span>
+        <span class="brand-ext-pill">ThemeCore Cloud</span>
+        <span class="brand-ext-pill">ThemeCore Pro</span>
+      </div>
+      <p class="brand-ext-label reveal reveal-delay-2">Example brand extensions</p>
+    </div>
+  </div>
+</section>
+<section class="section section-alt" aria-labelledby="details-title">
+  <div class="container">
+    <header class="section-header">
+      <span class="text-label reveal">Domain Information</span>
+      <h2 class="text-section-title reveal reveal-delay-1" id="details-title">Domain Details</h2>
+    </header>
+    <div class="domain-details-wrap reveal reveal-delay-2">
+      <div class="domain-card">
+        <div class="domain-card-name">ThemeCore<span style="color:var(--color-accent)">.net</span></div>
+        <div class="domain-card-tags">
+          <span class="domain-tag domain-tag-blue">Premium</span>
+          <span class="domain-tag domain-tag-green">Brandable</span>
+          <span class="domain-tag domain-tag-purple">Memorable</span>
+        </div>
+        <div class="domain-card-divider" aria-hidden="true"></div>
+        <div class="domain-details-grid">
+          <div class="domain-detail-item"><div class="domain-detail-label">Extension</div><div class="domain-detail-value">.NET</div></div>
+          <div class="domain-detail-item"><div class="domain-detail-label">Name</div><div class="domain-detail-value">ThemeCore</div></div>
+          <div class="domain-detail-item"><div class="domain-detail-label">Length</div><div class="domain-detail-value">9 letters</div></div>
+          <div class="domain-detail-item"><div class="domain-detail-label">Category</div><div class="domain-detail-value">Brandable Domain</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="purchase-section" id="purchase" aria-labelledby="purchase-title">
+  <div class="container">
+    <header class="section-header">
+      <span class="text-label reveal">Acquire This Domain</span>
+      <h2 class="text-section-title reveal reveal-delay-1" id="purchase-title">Make ThemeCore.net Yours</h2>
+    </header>
+    <div class="purchase-card reveal reveal-delay-2">
+      <div class="purchase-price" data-price aria-label="Domain price"></div>
+      <p class="purchase-price-note">One-time purchase price &middot; Negotiable</p>
+      <div class="purchase-cta-group">
+        <button class="btn btn-primary btn-lg btn-full" data-modal="offer" id="main-buy-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Buy ThemeCore.net
+        </button>
+        <div class="purchase-divider"><span>Prefer to negotiate?</span></div>
+        <button class="btn btn-outline btn-lg btn-full" data-modal="offer">Make an Offer</button>
+        <button class="btn btn-ghost btn-full" data-modal="contact">Contact Seller</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section-alt" aria-labelledby="how-title">
+  <div class="container">
+    <header class="section-header">
+      <span class="text-label reveal">Process</span>
+      <h2 class="text-section-title reveal reveal-delay-1" id="how-title">How It Works</h2>
+      <p class="text-section-subtitle reveal reveal-delay-2">A simple, transparent process from first contact to domain transfer.</p>
+    </header>
+    <div class="how-grid">
+      <div class="how-step reveal">
+        <div class="how-step-num" aria-hidden="true">01</div>
+        <h3>Make an Offer</h3>
+        <p>Submit your offer or choose Buy Now to start the acquisition process.</p>
+      </div>
+      <div class="how-step reveal reveal-delay-2">
+        <div class="how-step-num" aria-hidden="true">02</div>
+        <h3>Confirm Purchase</h3>
+        <p>Confirm the transaction details with the seller before proceeding.</p>
+      </div>
+      <div class="how-step reveal reveal-delay-4">
+        <div class="how-step-num" aria-hidden="true">03</div>
+        <h3>Domain Transfer</h3>
+        <p>Complete the domain transfer securely through an escrow or registrar process.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <header class="section-header">
+      <span class="text-label reveal">Common Questions</span>
+      <h2 class="text-section-title reveal reveal-delay-1" id="faq-title">Frequently Asked Questions</h2>
+    </header>
+    <ul class="faq-list" role="list">
+      <li class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Is ThemeCore.net available for purchase?
+          <span class="faq-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer" role="region"><div class="faq-answer-inner">Yes, ThemeCore.net is currently available for acquisition. You can purchase it outright or make an offer using the forms on this page.</div></div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Can I make an offer?
+          <span class="faq-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer" role="region"><div class="faq-answer-inner">Absolutely. If the listed price does not work for you, you are welcome to submit an offer. Use the "Make an Offer" button on this page to get in touch with the seller.</div></div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What can I use ThemeCore.net for?
+          <span class="faq-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer" role="region"><div class="faq-answer-inner">ThemeCore.net is highly versatile. It could be used for a theme or template marketplace, a UI/design platform, a SaaS product, a web design agency, developer tools, an AI design platform, and much more. The domain is adaptable to a wide range of modern digital businesses.</div></div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How will the domain be transferred?
+          <span class="faq-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer" role="region"><div class="faq-answer-inner">Once a purchase is agreed upon, the domain can be transferred securely via a domain registrar push or through an escrow service for added security. The specifics will be arranged directly with the seller.</div></div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Can I contact the seller before making an offer?
+          <span class="faq-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer" role="region"><div class="faq-answer-inner">Yes, you can reach out via the "Contact Seller" option on this page. Feel free to ask any questions about the domain before committing to a purchase.</div></div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="final-cta" id="contact-section" aria-labelledby="final-cta-title">
+  <div class="final-cta-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="final-cta-content">
+      <p class="final-cta-eyebrow reveal">Your next brand could start with one name.</p>
+      <h2 class="final-cta-domain reveal reveal-delay-1" id="final-cta-title">ThemeCore.net</h2>
+      <p class="final-cta-sub reveal reveal-delay-2">Buy it. Build it. Brand it.</p>
+      <div class="final-cta-btns reveal reveal-delay-3">
+        <button class="btn btn-white btn-lg" data-modal="offer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Buy Now
+        </button>
+        <button class="btn btn-outline-white btn-lg" data-modal="offer">Make an Offer</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">ThemeCore<span>.net</span></div>
+        <p class="footer-desc">Premium domain available for acquisition. Brandable, memorable, and ready for your next digital venture.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#why">Why ThemeCore</a>
+        <a href="#usecases">Use Cases</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact-section">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ThemeCore.net. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<div class="modal-overlay" id="modal-offer" role="dialog" aria-modal="true" aria-labelledby="modal-offer-title">
+  <div class="modal">
+    <button class="modal-close" aria-label="Close dialog"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <h2 class="modal-title" id="modal-offer-title">Make an Offer</h2>
+    <p class="modal-subtitle">Submit your offer for ThemeCore.net and the seller will be in touch.</p>
+    <div class="modal-notice" role="note"><strong>Note:</strong> This form is currently frontend-only. Your offer details will be displayed on-screen. No email is sent automatically.</div>
+    <form id="form-offer" novalidate>
+      <div class="form-group">
+        <label class="form-label" for="offer-name">Full Name <span aria-hidden="true">*</span></label>
+        <input class="form-input" type="text" id="offer-name" name="name" placeholder="Your full name" autocomplete="name" required />
+        <span class="form-error" aria-live="polite"></span>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="offer-email">Email Address <span aria-hidden="true">*</span></label>
+        <input class="form-input" type="email" id="offer-email" name="email" placeholder="you@example.com" autocomplete="email" required />
+        <span class="form-error" aria-live="polite"></span>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="offer-amount">Your Offer (USD) <span aria-hidden="true">*</span></label>
+        <input class="form-input" type="number" id="offer-amount" name="amount" placeholder="e.g. 1500" min="1" required />
+        <span class="form-error" aria-live="polite"></span>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="offer-message">Message <span style="font-weight:400;color:var(--color-muted)">(optional)</span></label>
+        <textarea class="form-textarea" id="offer-message" name="message" placeholder="Tell the seller about your plans for the domain..."></textarea>
+        <span class="form-error" aria-live="polite"></span>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn-full">Submit Offer</button>
+        <button type="button" class="btn btn-outline" onclick="document.getElementById('modal-offer').classList.remove('open');document.body.style.overflow='';" aria-label="Cancel">Cancel</button>
+      </div>
+    </form>
+    <div class="modal-success" id="offer-success" style="display:none">
+      <div class="modal-success-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+      <h3>Offer Ready to Submit</h3>
+      <p>Thank you. Your offer details are ready to be submitted. Please contact the seller directly or use your preferred communication method to send these details.</p>
+    </div>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-contact" role="dialog" aria-modal="true" aria-labelledby="modal-contact-title">
+  <div class="modal">
+    <button class="modal-close" aria-label="Close dialog"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <h2 class="modal-title" id="modal-contact-title">Contact Seller</h2>
+    <p class="modal-subtitle">Have a question about ThemeCore.net? Send the seller a message.</p>
+    <div class="modal-notice" role="note"><strong>Note:</strong> This form is frontend-only and does not send an email automatically. Use the details here to reach the seller directly.</div>
+    <form id="form-contact" novalidate>
+      <div class="form-group">
+        <label class="form-label" for="contact-name">Full Name <span aria-hidden="true">*</span></label>
+        <input class="form-input" type="text" id="contact-name" name="name" placeholder="Your full name" autocomplete="name" required />
+        <span class="form-error" aria-live="polite"></span>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="contact-email">Email Address <span aria-hidden="true">*</span></label>
+        <input class="form-input" type="email" id="contact-email" name="email" placeholder="you@example.com" autocomplete="email" required />
+        <span class="form-error" aria-live="polite"></span>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="contact-message">Message</label>
+        <textarea class="form-textarea" id="contact-message" name="message" placeholder="Your question or message about ThemeCore.net..."></textarea>
+        <span class="form-error" aria-live="polite"></span>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        <button type="button" class="btn btn-outline" onclick="document.getElementById('modal-contact').classList.remove('open');document.body.style.overflow='';" aria-label="Cancel">Cancel</button>
+      </div>
+    </form>
+    <div class="modal-success" id="contact-success" style="display:none">
+      <div class="modal-success-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+      <h3>Message Ready</h3>
+      <p>Thank you for your message. This form is currently frontend-only. Please send your enquiry directly to the seller via your preferred contact method.</p>
+    </div>
+  </div>
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>
